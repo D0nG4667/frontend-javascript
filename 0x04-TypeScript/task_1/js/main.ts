@@ -21,4 +21,18 @@ const director1: Directors = {
     numberOfReports: 17,
 };
 
-console.log(director1);
+// console.log(director1);
+
+// Define the function interface
+export interface printTeacherFunction {
+    (firstName: string, lastName: string): string;
+}
+
+// Implement the function
+export const printTeacher: printTeacherFunction = (firstName, lastName) => {
+    return `${firstName.charAt(0)}. ${lastName}`;
+};
+
+// Example usage
+// console.log(printTeacher("John", "Doe")); // Output: J. Doe
+
