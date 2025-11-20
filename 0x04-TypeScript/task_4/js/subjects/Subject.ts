@@ -1,9 +1,15 @@
 namespace Subjects {
-    export class Subject {
-        teacher?: Teacher;
+  // ✅ Interface Subject with setTeacher signature
+  export interface Subject {
+    setTeacher(teacher:Teacher) : void;
+  }
 
-        setTeacher(teacher: Teacher): void {
-            this.teacher = teacher;
-        }
+  // ✅ Class Subject implements the interface
+  export class Subject implements Subject {
+    teacher?: Teacher;
+
+    setTeacher(teacher: Teacher): void {
+      this.teacher = teacher;
     }
+  }
 }
