@@ -58,7 +58,7 @@ console.log(createEmployee("$500").constructor.name); // Director
 
 // Creating functions specific to employees
 // Type predicate to check if employee is a Director
-function isDirector(employee: Director | Teacher): employee is Director {
+export function isDirector(employee: Director | Teacher): employee is Director {
     return (employee as Director).workDirectorTasks !== undefined;
 }
 
