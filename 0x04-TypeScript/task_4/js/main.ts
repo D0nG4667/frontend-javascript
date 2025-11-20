@@ -7,6 +7,7 @@
 const Cpp = Subjects.Cpp;
 const Java = Subjects.Java;
 const React = Subjects.React;
+type Teacher = Subjects.Teacher;
 
 // Instantiate and export subject constants
 export const cpp = new Cpp();
@@ -14,7 +15,7 @@ export const java = new Java();
 export const react = new React();
 
 // Create and export a teacher with experienceTeachingC = 10
-const cTeacher: Subjects.Teacher = {
+const cTeacher: Teacher = {
     firstName: 'John',
     lastName: 'Doe',
     experienceTeachingC: 10,
